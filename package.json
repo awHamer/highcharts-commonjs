@@ -2,6 +2,9 @@
   "name": "highcharts-commonjs",
   "version": "4.1.1",
   "description": "Create interactive charts easily for your web projects.",
+  "dependencies": {
+    "jquery": "2.1.3"
+  },
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,7 +16,6 @@
   "keywords": [
     "highcharts"
   ],
-  "author": "",
   "license": "www.highcharts.com/license",
   "bugs": {
     "url": "https://github.com/crealogix/highcharts-commonjs/issues"
