@@ -1,0 +1,22 @@
+{
+  "name": "highcharts-commonjs",
+  "version": "4.1.1",
+  "description": "Create interactive charts easily for your web projects.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:crealogix/highcharts-commonjs.git"
+  },
+  "keywords": [
+    "highcharts"
+  ],
+  "author": "",
+  "license": "www.highcharts.com/license",
+  "bugs": {
+    "url": "https://github.com/crealogix/highcharts-commonjs/issues"
+  },
+  "homepage": "https://github.com/crealogix/highcharts-commonjs"
+}

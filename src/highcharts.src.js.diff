@@ -1,0 +1,69 @@
+0a1,6
+> /*eslint-disable*/
+> 'use strict';
+> var jquery = require('jquery');
+> var Highcharts;
+> var HighchartsAdapter;
+> 
+15d20
+< (function () {
+107c112
+< Highcharts = win.Highcharts = win.Highcharts ? error(16, true) : {};
+---
+> Highcharts = {};
+858c863
+< 	win.HighchartsAdapter = win.HighchartsAdapter || ($ && {
+---
+> 	HighchartsAdapter =  ($ && {
+962,999d966
+< 			
+< 			/**
+< 			 * Register Highcharts as a plugin in the respective framework
+< 			 */
+< 			$.fn.highcharts = function () {
+< 				var constr = 'Chart', // default constructor
+< 					args = arguments,
+< 					options,
+< 					ret,
+< 					chart;
+< 
+< 				if (this[0]) {
+< 
+< 					if (isString(args[0])) {
+< 						constr = args[0];
+< 						args = Array.prototype.slice.call(args, 1); 
+< 					}
+< 					options = args[0];
+< 
+< 					// Create the chart
+< 					if (options !== UNDEFINED) {
+< 						/*jslint unused:false*/
+< 						options.chart = options.chart || {};
+< 						options.chart.renderTo = this[0];
+< 						chart = new Highcharts[constr](options, args[1]);
+< 						ret = this;
+< 						/*jslint unused:true*/
+< 					}
+< 
+< 					// When called without parameters or with the return argument, get a predefined chart
+< 					if (options === UNDEFINED) {
+< 						ret = charts[attr(this[0], 'data-highcharts-chart')];
+< 					}
+< 				}
+< 				
+< 				return ret;
+< 			};
+< 
+1208c1175
+< }(win.jQuery));
+---
+> }(jquery));
+1212c1179
+< var globalAdapter = win.HighchartsAdapter,
+---
+> var globalAdapter = HighchartsAdapter,
+18392c18359,18360
+< }());
+---
+> module.exports = Highcharts;
+> /*eslint-enable*/
