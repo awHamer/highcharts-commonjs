@@ -62,7 +62,7 @@
 < var globalAdapter = win.HighchartsAdapter,
 ---
 > var globalAdapter = HighchartsAdapter,
-18392c18359,18360
+18506c18473,18474
 < }());
 ---
 > module.exports = Highcharts;
