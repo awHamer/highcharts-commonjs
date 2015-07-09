@@ -1,21 +1,21 @@
 0a1,6
-> /*eslint-disable*/
-> 'use strict';
-> var jquery = require('jquery');
-> var Highcharts;
-> var HighchartsAdapter;
-> 
+>  /*eslint-disable*/
+>  'use strict';
+>  var jquery = require('jquery');
+>  var Highcharts;
+>  var HighchartsAdapter;
+>  
 15d20
 < (function () {
-107c112
+109c114
 < Highcharts = win.Highcharts = win.Highcharts ? error(16, true) : {};
 ---
 > Highcharts = {};
-858c863
+867c872
 < 	win.HighchartsAdapter = win.HighchartsAdapter || ($ && {
 ---
-> 	HighchartsAdapter =  ($ && {
-962,999d966
+>  	HighchartsAdapter =  ($ && {
+971,1008d975
 < 			
 < 			/**
 < 			 * Register Highcharts as a plugin in the respective framework
@@ -54,15 +54,15 @@
 < 				return ret;
 < 			};
 < 
-1208c1175
+1217c1184
 < }(win.jQuery));
 ---
 > }(jquery));
-1212c1179
+1221c1188
 < var globalAdapter = win.HighchartsAdapter,
 ---
 > var globalAdapter = HighchartsAdapter,
-18506c18473,18474
+18635c18602,18603
 < }());
 ---
 > module.exports = Highcharts;
