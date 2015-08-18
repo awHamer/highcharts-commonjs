@@ -1,6 +1,6 @@
 # Highcharts Wrapper for CommonJS
 
-Added HighStock charts support
+Forked and added HighStock charts support
 
 ### Example Usage
 ```javascript

@@ -12,7 +12,6 @@ module.exports = {
   createStockChart: function(div, options, callback) {
     options.chart = options.chart || {};
     options.chart.renderTo = div;
-    console.log(' options;', options)
     return new Stockharts.StockChart(options, callback);
   },
   destroy: function(chart) {
