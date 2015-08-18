@@ -1,5 +1,7 @@
 # Highcharts Wrapper for CommonJS
 
+Added HighStock charts support
+
 ### Example Usage
 ```javascript
 'use strict';
