@@ -7,7 +7,7 @@ module.exports = {
   setStockOptions: function(options) {
     Stockharts.setOptions(options || {});
   },
-  setCharsOptions: function (){
+  setCharsOptions: function (options){
     Highcharts.setOptions(options || {});
   },
   createChart: function(div, options, callback) {
